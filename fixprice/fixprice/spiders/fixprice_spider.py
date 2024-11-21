@@ -78,6 +78,7 @@ class FixPriceSpider(Spider):
         page_count = response.meta["page_count"]
 
         self.logger.info(f"Parsing category: {category_url}, page {page_count}")
+        #test
 
         product_links = xpath(
             response.text,
